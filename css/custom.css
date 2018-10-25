@@ -6,3 +6,17 @@
     defined here.
 
 ***************************************************** */
+.top-bar {
+  background: #1c1c1c;
+  padding: 0 1rem;
+}
+.top-nav li a {
+  color: #fff !important;
+  font-size: .7rem;
+  margin: 0;
+  padding: .5rem .75rem;
+}
+.top-nav li a:hover {
+  background: #fff;
+  color: #000!important;
+}
