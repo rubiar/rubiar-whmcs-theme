@@ -6,15 +6,24 @@
     defined here.
 
 ***************************************************** */
+body {
+  font-family: 'Roboto', sans-sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
 .top-bar {
   background: #1c1c1c;
   padding: 0 1rem;
+  height: 32px;
 }
 .top-nav li a {
   color: #fff !important;
   font-size: .7rem;
   margin: 0;
   padding: .5rem .75rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 .top-nav li a:hover {
   background: #fff;

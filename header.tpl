@@ -14,7 +14,7 @@
 <body data-phone-cc-input="{$phoneNumberInputStyle}">
 
 {$headeroutput}
-<div class="topbar-navigation">
+<div class="top-bar">
   <ul class="top-nav">
       {if $languagechangeenabled && count($locales) > 1}
           <li>
@@ -100,38 +100,26 @@
 </section>
 
 <section id="main-menu">
+  <nav id="nav" class="navbar navbar-expand-lg navbar-light bg-light navbar-main" role="navigation">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <nav id="nav" class="navbar navbar-default navbar-main" role="navigation">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#primary-nav">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-            </div>
+      <div class="collapse navbar-collapse" id="primary-nav">
+        <ul class="navbar-nav nav">
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="primary-nav">
+            {include file="$template/includes/navbar.tpl" navbar=$primaryNavbar}
 
-                <ul class="nav navbar-nav">
+        </ul>
 
-                    {include file="$template/includes/navbar.tpl" navbar=$primaryNavbar}
+        <ul class="navbar-nav ml-auto">
 
-                </ul>
+            {include file="$template/includes/navbar.tpl" navbar=$secondaryNavbar}
 
-                <ul class="nav navbar-nav navbar-right">
-
-                    {include file="$template/includes/navbar.tpl" navbar=$secondaryNavbar}
-
-                </ul>
-
-            </div><!-- /.navbar-collapse -->
-        </div>
+        </ul>
+      </div>
     </nav>
-
 </section>
 
 {if $templatefile == 'homepage'}
