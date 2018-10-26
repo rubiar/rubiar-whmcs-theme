@@ -15,7 +15,7 @@
 
 {$headeroutput}
 <div class="top-bar">
-  <ul class="top-nav">
+  <ul class="nav top-nav justify-content-end">
       {if $languagechangeenabled && count($locales) > 1}
           <li>
               <a href="#" class="choose-language" data-toggle="popover" id="languageChooser">
@@ -59,7 +59,7 @@
                   </ul>
               </div>
           </li>
-          <li class="primary-action">
+          <li>
               <a href="{$WEB_ROOT}/logout.php" class="btn">
                   {$LANG.clientareanavlogout}
               </a>
@@ -73,7 +73,7 @@
                   <a href="{$WEB_ROOT}/register.php">{$LANG.register}</a>
               </li>
           {/if}
-          <li class="primary-action">
+          <li>
               <a href="{$WEB_ROOT}/cart.php?a=view" class="btn">
                   {$LANG.viewcart}
               </a>
@@ -100,8 +100,7 @@
 </section>
 
 <section id="main-menu">
-  <nav id="nav" class="navbar navbar-expand-lg navbar-light bg-light navbar-main" role="navigation">
-      <a class="navbar-brand" href="#">Navbar</a>
+  <nav id="nav" class="navbar navbar-expand-lg navbar-main" role="navigation">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -129,17 +128,17 @@
                 <h2>{$LANG.homebegin}</h2>
                 <form method="post" action="domainchecker.php">
                     <div class="row">
-                        <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+                        <div class="col-md-8 offset-md-2 col-sm-10 offset-sm-1">
                             <div class="input-group input-group-lg">
-                                <input type="text" class="form-control" name="domain" placeholder="{$LANG.exampledomain}" autocapitalize="none" />
-                                <span class="input-group-btn">
-                                    {if $registerdomainenabled}
-                                        <input type="submit" class="btn search" value="{$LANG.search}" />
-                                    {/if}
-                                    {if $transferdomainenabled}
-                                        <input type="submit" name="transfer" class="btn transfer" value="{$LANG.domainstransfer}" />
-                                    {/if}
-                                </span>
+                              <input type="text" class="form-control" name="domain" placeholder="{$LANG.exampledomain}" autocapitalize="none">
+                              <div class="input-group-append" id="button-addon4">
+                                {if $registerdomainenabled}
+                                    <input type="submit" class="btn btn-outline-secondary search" value="{$LANG.search}" />
+                                {/if}
+                                {if $transferdomainenabled}
+                                    <input type="submit" name="transfer" class="btn btn-outline-secondary transfer" value="{$LANG.domainstransfer}" />
+                                {/if}
+                              </div>
                             </div>
                         </div>
                     </div>

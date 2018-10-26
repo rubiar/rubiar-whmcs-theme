@@ -15,9 +15,12 @@ h1, h2, h3, h4, h5, h6 {
 .top-bar {
   background: #1c1c1c;
   padding: 0 1rem;
-  height: 32px;
 }
-.top-nav li a {
+ul.top-nav {
+  float: none !important;
+  margin: 0 !important;
+}
+ul.top-nav li a {
   color: #fff !important;
   font-size: .7rem;
   margin: 0;
@@ -25,7 +28,7 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   letter-spacing: 1px;
 }
-.top-nav li a:hover {
-  background: #fff;
+ul.top-nav li a:hover {
+  background: #fff !important;
   color: #000!important;
 }
