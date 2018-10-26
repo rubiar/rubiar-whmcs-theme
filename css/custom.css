@@ -6,3 +6,85 @@
     defined here.
 
 ***************************************************** */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto:500');
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+}
+section#home-banner {
+  padding:15rem 0 15rem 0;
+  background: linear-gradient(to right,#7a000e,#be0015 100%);
+}
+.navbar-main {
+  background:#1c1c1c;
+}
+.navbar-nav li a {
+    text-transform:uppercase;
+    letter-spacing:1px;
+    font-size:1.1rem;
+}
+.navbar-main .navbar-nav > .active > a, .navbar-main .navbar-nav > .active > a:focus, .navbar-main .navbar-nav > .active > a:hover,
+.navbar-main .navbar-nav > .open > a, .navbar-main .navbar-nav > .open > a:focus, .navbar-main .navbar-nav > .open > a:hover,
+.navbar-main .navbar-nav > li > a:focus, .navbar-main .navbar-nav > li > a:hover {
+  background:#000;
+}
+.navbar-main li.account {
+  background:transparent;
+}
+.home-shortcuts {
+  padding:3rem 0 3rem 0;
+  background:#1c1c1c;
+}
+section#home-banner .form-control {
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+section#home-banner .btn.transfer {
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+section#home-banner .btn.transfer:hover {
+  background: #AAA;
+}
+section#home-banner .btn.search:hover {
+  background: #247c58;
+}
+.home-shortcuts li:hover {
+  background:rgba(0,0,0,.2);
+}
+.home-shortcuts li:first-child, .home-shortcuts li {
+  border-color:rgba(0,0,0,.2);
+}
+.home-shortcuts li a {
+    padding:2rem 0;
+}
+.home-shortcuts .lead {
+    line-height:92px;
+    font-family: 'Roboto', sans-serif;
+}
+div.header-lined h1 {
+    color:#000;
+}
+.panel, .promo-banner  {
+    box-shadow: 0 4px 8px -4px rgba(0,0,0,.23);
+}
+.panel-sidebar > .panel-heading, .panel-default > .panel-heading {
+    background-color: #1c1c1c;
+}
+.panel-heading > .panel-title {
+    color:#FFF;
+}
+.client-home-panels .panel-heading {
+    border-bottom:none;
+    border-bottom:1px solid #DDD !important;
+}
+.client-home-panels .panel-title {
+    color:#000;
+}
+/***
+.input-group {
+    box-shadow: 0 8px 10px -4px rgba(0,0,0,.33);
+}
+***/
