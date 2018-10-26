@@ -67,14 +67,30 @@ section#home-banner .btn.search:hover {
 div.header-lined h1 {
     color:#000;
 }
-.panel, .promo-banner  {
+.promo-banner  {
     box-shadow: 0 4px 8px -4px rgba(0,0,0,.23);
 }
+.panel-sidebar {
+  border: none;
+  box-shadow: none;
+}
 .panel-sidebar > .panel-heading, .panel-default > .panel-heading {
-    background-color: #1c1c1c;
+    background:none;
 }
 .panel-heading > .panel-title {
-    color:#FFF;
+    color:#1c1c1c;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+.panel-sidebar .list-group-item {
+  border:none;
+}
+.panel-sidebar .list-group-item a {
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: 100ms linear;
 }
 .client-home-panels .panel-heading {
     border-bottom:none;
