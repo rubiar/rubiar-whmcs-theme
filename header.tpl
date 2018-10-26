@@ -223,7 +223,7 @@
         {if !$inShoppingCart && ($primarySidebar->hasChildren() || $secondarySidebar->hasChildren())}
             {if $primarySidebar->hasChildren() && !$skipMainBodyContainer}
                 <div class="col-md-9 pull-md-right">
-                    {include file="$template/includes/pageheader.tpl" title=$displayTitle desc=$tagline showbreadcrumb=true}
+                  {include file="$template/includes/pageheader.tpl" title=$displayTitle desc=$tagline showbreadcrumb=true}
                 </div>
             {/if}
             <div class="col-md-3 pull-md-left sidebar">

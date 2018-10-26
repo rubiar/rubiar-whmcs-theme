@@ -85,8 +85,6 @@ div.header-lined h1 {
 }
 .panel-sidebar .list-group-item {
   border:none;
-}
-.panel-sidebar .list-group-item a {
   font-size: 1.1rem;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -99,8 +97,27 @@ div.header-lined h1 {
 .client-home-panels .panel-title {
     color:#000;
 }
-/***
-.input-group {
-    box-shadow: 0 8px 10px -4px rgba(0,0,0,.33);
+.page-header {
+  background: linear-gradient(to right,#7a000e,#be0015 100%);
+  padding: 3rem 1rem;
+  text-align: center;
 }
-***/
+.page-header .header-lined h1 {
+  border:none;
+  font-weight: bold;
+  color:#FFF;
+}
+/** Knowledgebase **/
+.kb-category-link {
+  font-size: 1.5rem;
+}
+.kbarticles {
+  font-size: 1.3rem;
+}
+.kb-article-link {
+  display: block;
+  padding: 1rem 0;
+}
+.kb-article-link:not(:last-of-type) {
+  border-bottom: 1px solid #eee;
+}
